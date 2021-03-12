@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\libco">
+      <UniqueIdentifier>{0c4bf53d-7986-4434-bbd2-734da3553be9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libco">
+      <UniqueIdentifier>{da657dc9-d7b4-417e-b916-6543cf17b67e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\miniz">
+      <UniqueIdentifier>{344a14d0-22c5-4d62-a89a-7f3f1e005381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\miniz">
+      <UniqueIdentifier>{83fcb534-f976-4615-bdeb-ba80fb510f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\md5">
+      <UniqueIdentifier>{478f0e62-2042-41ff-8b48-b48e6b5aed88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\md5">
+      <UniqueIdentifier>{30fe8838-348b-4aa5-b517-93cae495ce86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\support">
+      <UniqueIdentifier>{e440dc55-22b0-40b2-887d-dfd701749ea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\support">
+      <UniqueIdentifier>{095305c7-e04b-4f03-b8d8-db2d888b449c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\imlib">
+      <UniqueIdentifier>{a5ee9c49-ce79-4665-8a6e-751bd82eff23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lodpng">
+      <UniqueIdentifier>{f72c7b7a-09fd-4c2f-a8cb-14e1077e8acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lodepng">
+      <UniqueIdentifier>{9e138a0b-53c4-4ae8-a59b-6b7bf2dcc01b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libchdr">
+      <UniqueIdentifier>{fa39a4f3-d53d-4f5f-9988-5b15146ff576}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libchdr\include">
+      <UniqueIdentifier>{10f00b15-53c3-4070-b392-13db5c665201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libchdr\include\libchdr">
+      <UniqueIdentifier>{cb121959-7dc5-4fe4-a759-5bae228fff32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libchdr">
+      <UniqueIdentifier>{b9a029b4-027d-4083-87e7-9b10d210d961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flac">
+      <UniqueIdentifier>{f8c2fc10-5c2f-409d-8e3f-d43047fa7b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flac">
+      <UniqueIdentifier>{f1db3d05-7c64-4868-8b73-d13160b88112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flac\include">
+      <UniqueIdentifier>{d66023da-6328-4762-9b8f-0ac6f611eb4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flac\include\FLAC">
+      <UniqueIdentifier>{09d5910e-28c8-42e0-b080-fa88a0d7eac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flac\src">
+      <UniqueIdentifier>{48e29f10-4af8-4eaf-a102-95963a630ed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flac\src\include">
+      <UniqueIdentifier>{b0ed5f56-4f27-4820-b4eb-0edd218fdde2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flac\src\include\private">
+      <UniqueIdentifier>{a03c1aed-76a7-4965-a94e-b968ce3eadb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flac\src\include\protected">
+      <UniqueIdentifier>{9ec2be18-be5c-45b9-99e1-c06690e925fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flac\src\include\share">
+      <UniqueIdentifier>{67e57e66-6c1f-4a42-a444-5061e26ed68f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flac\src\include\share\grabbag">
+      <UniqueIdentifier>{fd7269bc-dc25-4f90-997d-02ffb5ba4fb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lzma">
+      <UniqueIdentifier>{dc74b4fa-7517-4021-ba9e-f0d40b14a451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lzma">
+      <UniqueIdentifier>{09536037-5c44-4339-af33-7faebd0493da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flac\src">
+      <UniqueIdentifier>{a5fddcb9-99f1-448d-b46e-c3039caa8166}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="battery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="brightness.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cfg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiskImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fpga_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hardware.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="osd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sxmlc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="user_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\miniz\miniz.c">
+      <Filter>Source Files\miniz</Filter>
+    </ClCompile>
+    <ClCompile Include="bootcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="charrom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scaler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="joymapping.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\lodepng\lodepng.cpp">
+      <Filter>Source Files\lodepng</Filter>
+    </ClCompile>
+    <ClCompile Include="support\archie\archie.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\megacd\megacd.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\minimig\minimig_boot.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\minimig\minimig_config.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\minimig\minimig_fdd.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\minimig\minimig_hdd.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\sharpmz\sharpmz.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\snes\snes.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\st\st_tos.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\x86\x86.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\arcade\buffer.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="recent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="support\c64\c64.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\pcecd\pcecd.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\pcecd\pcecdd.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\megacd\megacdd.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\neogeo\neogeo_loader.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\arcade\mra_loader.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\pcecd\seektime.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="audio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="support\minimig\minimig_share.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\x86\x86_share.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\x86\x86_ide.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="support\x86\x86_cdrom.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\libco\arm.c">
+      <Filter>Source Files\libco</Filter>
+    </ClCompile>
+    <ClCompile Include="support\chd\mister_chd.cpp">
+      <Filter>Source Files\support</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\libchdr\libchdr_chd.c">
+      <Filter>Source Files\libchdr</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\libchdr\libchdr_bitstream.c">
+      <Filter>Source Files\libchdr</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\libchdr\libchdr_cdrom.c">
+      <Filter>Source Files\libchdr</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\libchdr\libchdr_flac.c">
+      <Filter>Source Files\libchdr</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\libchdr\libchdr_huffman.c">
+      <Filter>Source Files\libchdr</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\lzma\LzmaDec.c">
+      <Filter>Source Files\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\lzma\LzmaEnc.c">
+      <Filter>Source Files\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\lzma\LzFind.c">
+      <Filter>Source Files\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\stream_decoder.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\bitmath.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\bitreader.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\bitwriter.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\cpu.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\crc.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\fixed.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\float.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\format.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\lpc.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\memory.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\metadata_iterators.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\metadata_object.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\stream_encoder.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\stream_encoder_framing.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\window.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\md5\md5.c">
+      <Filter>Source Files\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\flac\src\FLAC__md5.c">
+      <Filter>Source Files\flac\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="battery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="brightness.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="charrom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiskImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fpga_base_addr_ac5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fpga_io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fpga_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fpga_nic301.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fpga_reset_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fpga_system_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hardware.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="logo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="osd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sxmlc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="user_io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libco\libco.h">
+      <Filter>Header Files\libco</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libco\settings.h">
+      <Filter>Header Files\libco</Filter>
+    </ClInclude>
+    <ClInclude Include="scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\miniz\miniz.h">
+      <Filter>Header Files\miniz</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\miniz\miniz_common.h">
+      <Filter>Header Files\miniz</Filter>
+    </ClInclude>
+    <ClInclude Include="bootcore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="scaler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="joymapping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="support\archie\archie.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\imlib2\Imlib2.h">
+      <Filter>Header Files\imlib</Filter>
+    </ClInclude>
+    <ClInclude Include="support\st\st_tos.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\lodepng\lodepng.h">
+      <Filter>Header Files\lodpng</Filter>
+    </ClInclude>
+    <ClInclude Include="support\minimig\minimig_boot.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\minimig\minimig_config.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\minimig\minimig_fdd.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\minimig\minimig_hdd.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\minimig\minimig_hdd_internal.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\x86\x86.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\snes\snes.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\sharpmz\sharpmz.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\megacd\megacd.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\arcade\buffer.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="recent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="support\c64\c64.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="cd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="support\pcecd\pcecd.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\neogeo\neogeo_loader.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\arcade\mra_loader.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="support\minimig\minimig_share.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\minimig\miminig_fs_messages.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\x86\x86_share.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\x86\x86_ide.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\x86\x86_cdrom.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\miniz\miniz_tdef.h">
+      <Filter>Header Files\miniz</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\miniz\miniz_zip.h">
+      <Filter>Header Files\miniz</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libchdr\include\libchdr\chd.h">
+      <Filter>Header Files\libchdr\include\libchdr</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libchdr\include\libchdr\bitstream.h">
+      <Filter>Header Files\libchdr\include\libchdr</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libchdr\include\libchdr\cdrom.h">
+      <Filter>Header Files\libchdr\include\libchdr</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libchdr\include\libchdr\chdconfig.h">
+      <Filter>Header Files\libchdr\include\libchdr</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libchdr\include\libchdr\coretypes.h">
+      <Filter>Header Files\libchdr\include\libchdr</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libchdr\include\libchdr\flac.h">
+      <Filter>Header Files\libchdr\include\libchdr</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libchdr\include\libchdr\huffman.h">
+      <Filter>Header Files\libchdr\include\libchdr</Filter>
+    </ClInclude>
+    <ClInclude Include="support\chd\mister_chd.h">
+      <Filter>Header Files\support</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\include\FLAC\all.h">
+      <Filter>Header Files\flac\include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\include\FLAC\callback.h">
+      <Filter>Header Files\flac\include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\include\FLAC\export.h">
+      <Filter>Header Files\flac\include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\include\FLAC\format.h">
+      <Filter>Header Files\flac\include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\include\FLAC\metadata.h">
+      <Filter>Header Files\flac\include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\include\FLAC\ordinals.h">
+      <Filter>Header Files\flac\include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\include\FLAC\stream_decoder.h">
+      <Filter>Header Files\flac\include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\include\FLAC\stream_encoder.h">
+      <Filter>Header Files\flac\include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\lzma\LzmaDec.h">
+      <Filter>Header Files\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\lzma\LzmaEnc.h">
+      <Filter>Header Files\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\lzma\LzFind.h">
+      <Filter>Header Files\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\lzma\Precomp.h">
+      <Filter>Header Files\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\lzma\Compiler.h">
+      <Filter>Header Files\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\lzma\7zTypes.h">
+      <Filter>Header Files\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\lzma\LzHash.h">
+      <Filter>Header Files\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\share\compat.h">
+      <Filter>Header Files\flac\src\include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\share\alloc.h">
+      <Filter>Header Files\flac\src\include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\bitmath.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\bitreader.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\cpu.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\crc.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\fixed.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\format.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\lpc.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\macros.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\memory.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\protected\stream_decoder.h">
+      <Filter>Header Files\flac\src\include\protected</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\float.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\bitwriter.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\share\endswap.h">
+      <Filter>Header Files\flac\src\include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\metadata.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\protected\stream_encoder.h">
+      <Filter>Header Files\flac\src\include\protected</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\window.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\stream_encoder.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\stream_encoder_framing.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\share\macros.h">
+      <Filter>Header Files\flac\src\include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\share\private.h">
+      <Filter>Header Files\flac\src\include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\share\safe_str.h">
+      <Filter>Header Files\flac\src\include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\md5\md5.h">
+      <Filter>Header Files\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\src\include\private\FLAC__md5.h">
+      <Filter>Header Files\flac\src\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\flac\include\FLAC\FLAC_assert.h">
+      <Filter>Header Files\flac\include\FLAC</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\imlib2\libbz2.so" />
+    <Library Include="lib\imlib2\libfreetype.so" />
+    <Library Include="lib\imlib2\libImlib2.so" />
+    <Library Include="lib\imlib2\libpng16.so" />
+    <Library Include="lib\imlib2\libz.so" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1 @@
+g++ -o "/home/pi/projects/Main/bin/ARM/Release/Main.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/pi/projects/Main/obj/ARM/Release/main.o /home/pi/projects/Main/obj/ARM/Release/OSD.o -lwiringPi

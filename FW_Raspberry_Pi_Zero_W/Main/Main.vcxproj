@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{681b2b8e-6324-4e42-abfa-53d68b609258}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>Main</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Raspberry</TargetLinuxPlatform>
+    <LinuxProjectType>{8748239F-558C-44D1-944B-07B09C35B330}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <IncludePath>$(SolutionDir)Main\lib\flac\src\include;$(SolutionDir)Main\lib\flac\src\include\share\grabbag;$(SolutionDir)Main\lib\flac\src\include\share;$(SolutionDir)Main\lib\flac\src\include\protected;$(SolutionDir)Main\lib\flac\src\include\private;$(SolutionDir)Main\lib\flac\include\FLAC;$(SolutionDir)Main\lib\lzma;$(SolutionDir)Main\lib\flac\include;$(SolutionDir)Main\support\pcecd;$(SolutionDir)Main\support\megacd;$(SolutionDir)Main;$(SolutionDir)Main\lib\libchdr\include;$(SolutionDir)Main\lib\libco;$(SolutionDir)Main\lib\miniz;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Main\lib\imlib2;$(LibraryPath)</LibraryPath>
+    <SourcesToCopyRemotelyOverride>@(SourcesToCopyRemotely);@(DataFilesToCopyRemotely);</SourcesToCopyRemotelyOverride>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Link>
+      <LibraryDependencies>wiringPi;rt</LibraryDependencies>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>gpio export 17 out</Command>
+      <Message>使用 gpio 实用程序导出 pin 17，以便可以在不使用 sudo 的情况下执行 blink 程序</Message>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Link>
+      <LibraryDependencies>wiringPi</LibraryDependencies>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>gpio export 17 out</Command>
+      <Message>使用 gpio 实用程序导出 pin 17，以便可以在不使用 sudo 的情况下执行 blink 程序</Message>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="audio.cpp" />
+    <ClCompile Include="battery.cpp" />
+    <ClCompile Include="bootcore.cpp" />
+    <ClCompile Include="brightness.cpp" />
+    <ClCompile Include="cfg.cpp" />
+    <ClCompile Include="charrom.cpp" />
+    <ClCompile Include="cheats.cpp" />
+    <ClCompile Include="DiskImage.cpp" />
+    <ClCompile Include="file_io.cpp" />
+    <ClCompile Include="fpga_io.cpp" />
+    <ClCompile Include="hardware.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="joymapping.cpp" />
+    <ClCompile Include="lib\flac\src\bitmath.c" />
+    <ClCompile Include="lib\flac\src\bitreader.c" />
+    <ClCompile Include="lib\flac\src\bitwriter.c" />
+    <ClCompile Include="lib\flac\src\cpu.c" />
+    <ClCompile Include="lib\flac\src\crc.c" />
+    <ClCompile Include="lib\flac\src\fixed.c" />
+    <ClCompile Include="lib\flac\src\float.c" />
+    <ClCompile Include="lib\flac\src\format.c" />
+    <ClCompile Include="lib\flac\src\lpc.c" />
+    <ClCompile Include="lib\flac\src\FLAC__md5.c" />
+    <ClCompile Include="lib\flac\src\memory.c" />
+    <ClCompile Include="lib\flac\src\metadata_iterators.c" />
+    <ClCompile Include="lib\flac\src\metadata_object.c" />
+    <ClCompile Include="lib\flac\src\stream_decoder.c" />
+    <ClCompile Include="lib\flac\src\stream_encoder.c" />
+    <ClCompile Include="lib\flac\src\stream_encoder_framing.c" />
+    <ClCompile Include="lib\flac\src\window.c" />
+    <ClCompile Include="lib\libchdr\libchdr_bitstream.c" />
+    <ClCompile Include="lib\libchdr\libchdr_cdrom.c" />
+    <ClCompile Include="lib\libchdr\libchdr_chd.c" />
+    <ClCompile Include="lib\libchdr\libchdr_flac.c" />
+    <ClCompile Include="lib\libchdr\libchdr_huffman.c" />
+    <ClCompile Include="lib\libco\arm.c" />
+    <ClCompile Include="lib\lodepng\lodepng.cpp" />
+    <ClCompile Include="lib\lzma\LzFind.c" />
+    <ClCompile Include="lib\lzma\LzmaDec.c" />
+    <ClCompile Include="lib\lzma\LzmaEnc.c" />
+    <ClCompile Include="lib\md5\md5.c" />
+    <ClCompile Include="lib\miniz\miniz.c" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="osd.cpp" />
+    <ClCompile Include="recent.cpp" />
+    <ClCompile Include="scaler.cpp" />
+    <ClCompile Include="scheduler.cpp" />
+    <ClCompile Include="spi.cpp" />
+    <ClCompile Include="support\arcade\buffer.cpp" />
+    <ClCompile Include="support\arcade\mra_loader.cpp" />
+    <ClCompile Include="support\archie\archie.cpp" />
+    <ClCompile Include="support\c64\c64.cpp" />
+    <ClCompile Include="support\chd\mister_chd.cpp" />
+    <ClCompile Include="support\megacd\megacd.cpp" />
+    <ClCompile Include="support\megacd\megacdd.cpp" />
+    <ClCompile Include="support\minimig\minimig_boot.cpp" />
+    <ClCompile Include="support\minimig\minimig_config.cpp" />
+    <ClCompile Include="support\minimig\minimig_fdd.cpp" />
+    <ClCompile Include="support\minimig\minimig_hdd.cpp" />
+    <ClCompile Include="support\minimig\minimig_share.cpp" />
+    <ClCompile Include="support\neogeo\neogeo_loader.cpp" />
+    <ClCompile Include="support\pcecd\pcecd.cpp" />
+    <ClCompile Include="support\pcecd\pcecdd.cpp" />
+    <ClCompile Include="support\pcecd\seektime.cpp" />
+    <ClCompile Include="support\sharpmz\sharpmz.cpp" />
+    <ClCompile Include="support\snes\snes.cpp" />
+    <ClCompile Include="support\st\st_tos.cpp" />
+    <ClCompile Include="support\x86\x86.cpp" />
+    <ClCompile Include="support\x86\x86_cdrom.cpp" />
+    <ClCompile Include="support\x86\x86_ide.cpp" />
+    <ClCompile Include="support\x86\x86_share.cpp" />
+    <ClCompile Include="sxmlc.c" />
+    <ClCompile Include="user_io.cpp" />
+    <ClCompile Include="video.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audio.h" />
+    <ClInclude Include="battery.h" />
+    <ClInclude Include="bootcore.h" />
+    <ClInclude Include="brightness.h" />
+    <ClInclude Include="cd.h" />
+    <ClInclude Include="cfg.h" />
+    <ClInclude Include="charrom.h" />
+    <ClInclude Include="cheats.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="DiskImage.h" />
+    <ClInclude Include="file_io.h" />
+    <ClInclude Include="fpga_base_addr_ac5.h" />
+    <ClInclude Include="fpga_io.h" />
+    <ClInclude Include="fpga_manager.h" />
+    <ClInclude Include="fpga_nic301.h" />
+    <ClInclude Include="fpga_reset_manager.h" />
+    <ClInclude Include="fpga_system_manager.h" />
+    <ClInclude Include="hardware.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="joymapping.h" />
+    <ClInclude Include="lib\flac\include\FLAC\all.h" />
+    <ClInclude Include="lib\flac\include\FLAC\FLAC_assert.h" />
+    <ClInclude Include="lib\flac\include\FLAC\callback.h" />
+    <ClInclude Include="lib\flac\include\FLAC\export.h" />
+    <ClInclude Include="lib\flac\include\FLAC\format.h" />
+    <ClInclude Include="lib\flac\include\FLAC\metadata.h" />
+    <ClInclude Include="lib\flac\include\FLAC\ordinals.h" />
+    <ClInclude Include="lib\flac\include\FLAC\stream_decoder.h" />
+    <ClInclude Include="lib\flac\include\FLAC\stream_encoder.h" />
+    <ClInclude Include="lib\flac\src\include\private\bitmath.h" />
+    <ClInclude Include="lib\flac\src\include\private\bitreader.h" />
+    <ClInclude Include="lib\flac\src\include\private\bitwriter.h" />
+    <ClInclude Include="lib\flac\src\include\private\cpu.h" />
+    <ClInclude Include="lib\flac\src\include\private\crc.h" />
+    <ClInclude Include="lib\flac\src\include\private\fixed.h" />
+    <ClInclude Include="lib\flac\src\include\private\float.h" />
+    <ClInclude Include="lib\flac\src\include\private\format.h" />
+    <ClInclude Include="lib\flac\src\include\private\lpc.h" />
+    <ClInclude Include="lib\flac\src\include\private\macros.h" />
+    <ClInclude Include="lib\flac\src\include\private\FLAC__md5.h" />
+    <ClInclude Include="lib\flac\src\include\private\memory.h" />
+    <ClInclude Include="lib\flac\src\include\private\metadata.h" />
+    <ClInclude Include="lib\flac\src\include\private\stream_encoder.h" />
+    <ClInclude Include="lib\flac\src\include\private\stream_encoder_framing.h" />
+    <ClInclude Include="lib\flac\src\include\private\window.h" />
+    <ClInclude Include="lib\flac\src\include\protected\stream_decoder.h" />
+    <ClInclude Include="lib\flac\src\include\protected\stream_encoder.h" />
+    <ClInclude Include="lib\flac\src\include\share\alloc.h" />
+    <ClInclude Include="lib\flac\src\include\share\compat.h" />
+    <ClInclude Include="lib\flac\src\include\share\endswap.h" />
+    <ClInclude Include="lib\flac\src\include\share\macros.h" />
+    <ClInclude Include="lib\flac\src\include\share\private.h" />
+    <ClInclude Include="lib\flac\src\include\share\safe_str.h" />
+    <ClInclude Include="lib\imlib2\Imlib2.h" />
+    <ClInclude Include="lib\libchdr\include\libchdr\bitstream.h" />
+    <ClInclude Include="lib\libchdr\include\libchdr\cdrom.h" />
+    <ClInclude Include="lib\libchdr\include\libchdr\chd.h" />
+    <ClInclude Include="lib\libchdr\include\libchdr\chdconfig.h" />
+    <ClInclude Include="lib\libchdr\include\libchdr\coretypes.h" />
+    <ClInclude Include="lib\libchdr\include\libchdr\flac.h" />
+    <ClInclude Include="lib\libchdr\include\libchdr\huffman.h" />
+    <ClInclude Include="lib\libco\libco.h" />
+    <ClInclude Include="lib\libco\settings.h" />
+    <ClInclude Include="lib\lodepng\lodepng.h" />
+    <ClInclude Include="lib\lzma\7zTypes.h" />
+    <ClInclude Include="lib\lzma\Compiler.h" />
+    <ClInclude Include="lib\lzma\LzFind.h" />
+    <ClInclude Include="lib\lzma\LzHash.h" />
+    <ClInclude Include="lib\lzma\LzmaDec.h" />
+    <ClInclude Include="lib\lzma\LzmaEnc.h" />
+    <ClInclude Include="lib\lzma\Precomp.h" />
+    <ClInclude Include="lib\md5\md5.h" />
+    <ClInclude Include="lib\miniz\miniz.h" />
+    <ClInclude Include="lib\miniz\miniz_common.h" />
+    <ClInclude Include="lib\miniz\miniz_tdef.h" />
+    <ClInclude Include="lib\miniz\miniz_zip.h" />
+    <ClInclude Include="logo.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="osd.h" />
+    <ClInclude Include="recent.h" />
+    <ClInclude Include="scaler.h" />
+    <ClInclude Include="scheduler.h" />
+    <ClInclude Include="spi.h" />
+    <ClInclude Include="support.h" />
+    <ClInclude Include="support\arcade\buffer.h" />
+    <ClInclude Include="support\arcade\mra_loader.h" />
+    <ClInclude Include="support\archie\archie.h" />
+    <ClInclude Include="support\c64\c64.h" />
+    <ClInclude Include="support\chd\mister_chd.h" />
+    <ClInclude Include="support\megacd\megacd.h" />
+    <ClInclude Include="support\minimig\miminig_fs_messages.h" />
+    <ClInclude Include="support\minimig\minimig_boot.h" />
+    <ClInclude Include="support\minimig\minimig_config.h" />
+    <ClInclude Include="support\minimig\minimig_fdd.h" />
+    <ClInclude Include="support\minimig\minimig_hdd.h" />
+    <ClInclude Include="support\minimig\minimig_hdd_internal.h" />
+    <ClInclude Include="support\minimig\minimig_share.h" />
+    <ClInclude Include="support\neogeo\neogeo_loader.h" />
+    <ClInclude Include="support\pcecd\pcecd.h" />
+    <ClInclude Include="support\sharpmz\sharpmz.h" />
+    <ClInclude Include="support\snes\snes.h" />
+    <ClInclude Include="support\st\st_tos.h" />
+    <ClInclude Include="support\x86\x86.h" />
+    <ClInclude Include="support\x86\x86_cdrom.h" />
+    <ClInclude Include="support\x86\x86_ide.h" />
+    <ClInclude Include="support\x86\x86_share.h" />
+    <ClInclude Include="sxmlc.h" />
+    <ClInclude Include="user_io.h" />
+    <ClInclude Include="video.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\imlib2\libbz2.so" />
+    <Library Include="lib\imlib2\libfreetype.so" />
+    <Library Include="lib\imlib2\libImlib2.so" />
+    <Library Include="lib\imlib2\libpng16.so" />
+    <Library Include="lib\imlib2\libz.so" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>_7ZIP_ST;FLAC_API_EXPORTS;FLAC__HAS_OGG=0;HAVE_LROUND;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_SYS_PARAM_H;PACKAGE_VERSION="01.03.03";VDATE="000000"</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
